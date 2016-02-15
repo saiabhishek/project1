@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="my">
+
+<body>
+  <div class="site-wrapper-inner">
+    <h1 class="cover-heading">DeadPool</h1>
+    <p class="lead">Running</p>
+  </div>
+  <div ng-repeat="service in services">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="{{service.url}}">
+        </div>
+      <div class="col-md-5">
+      
+        <h1>{{service.name}}</h1>
+      {{service.address}}
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="mastfoot">
+    <div class="inner">
+      <p>any info <a href="#/info">info</a>, by SAI.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

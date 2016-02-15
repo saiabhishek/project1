@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="my">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Project1</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="cover.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.4.8/angular-route.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <div class="cover-container">
+        <div class="inner">
+          <div class="masthead">
+            <h3 class="masthead-brand">Project1</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><a href="#/">Main</a></li>
+                  <li><a href="#/entertainment">Entertainment</a></li>
+                  <li><a href="#/info">Info</a></li>
+                 </ul>
+              </nav>
+          </div>
+        </div>
+        <div nd-controller="mainCtrl">
+          <div ng-view>
+          </div>
+        </div>
+      </div>
+     </div>
+  </body>
+</html>
